@@ -4,12 +4,21 @@ import React from 'react';
 
 type greetProps = {
 	name: string;
+	notificationCount: number;
+	isLoggedIn: boolean;
 };
 
 const Greet = (props: greetProps) => {
 	return (
 		<div>
-			<h1>Welcome {props.name}, you have alot of notifications today</h1>
+			{props.isLoggedIn ? (
+				<h1>
+					Welcome {props.name}, you have {props.notificationCount} notifications
+					today
+				</h1>
+			) : (
+				<h1>Welcome Guest</h1>
+			)}
 		</div>
 	);
 };
