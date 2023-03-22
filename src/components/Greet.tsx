@@ -6,6 +6,7 @@ type greetProps = {
 	name: string;
 	notificationCount: number;
 	isLoggedIn: boolean;
+	children: React.ReactNode;
 };
 
 const Greet = (props: greetProps) => {
@@ -19,6 +20,7 @@ const Greet = (props: greetProps) => {
 			) : (
 				<h1>Welcome Guest</h1>
 			)}
+			{props.children}
 		</div>
 	);
 };
