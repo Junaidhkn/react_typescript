@@ -1,9 +1,15 @@
 import React from 'react';
 
-const Greet = () => {
+// use types when building applications and interfaces when developing libraries
+
+type greetProps = {
+	name: string;
+};
+
+const Greet = (props: greetProps) => {
 	return (
 		<div>
-			<h1>Welcome Junaid, you have alot of notifications today</h1>
+			<h1>Welcome {props.name}, you have alot of notifications today</h1>
 		</div>
 	);
 };
