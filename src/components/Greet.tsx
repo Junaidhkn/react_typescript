@@ -4,18 +4,18 @@ import React from 'react';
 
 type greetProps = {
 	name: string;
-	notificationCount: number;
+	notificationCount?: number;
 	isLoggedIn: boolean;
 	children: React.ReactNode;
 };
 
 const Greet = (props: greetProps) => {
+	const { notificationCount = 0 } = props;
 	return (
 		<div>
 			{props.isLoggedIn ? (
 				<h1>
-					Welcome {props.name}, you have {props.notificationCount} notifications
-					today
+					Welcome {props.name}, you have {notificationCount} notifications today
 				</h1>
 			) : (
 				<h1>Welcome Guest</h1>

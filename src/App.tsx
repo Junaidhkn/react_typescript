@@ -33,8 +33,7 @@ const App = () => {
 		<div className='App'>
 			<Greet
 				name='Junaid'
-				isLoggedIn={true}
-				notificationCount={20}>
+				isLoggedIn={true}>
 				<Person name={personName} />
 				<PersonList nameList={nameList} />
 				<Status status='loading' />
