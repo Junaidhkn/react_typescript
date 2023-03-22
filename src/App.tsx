@@ -12,14 +12,17 @@ const App = () => {
 
 	const nameList = [
 		{
+			id: 'sddsf',
 			first: 'Usama',
 			last: 'Khan',
 		},
 		{
+			id: 'sdddfgfdsf',
 			first: 'Junaid',
 			last: 'Niazi',
 		},
 		{
+			id: 'sdds34fdfg',
 			first: 'Shah',
 			last: 'Gi',
 		},
