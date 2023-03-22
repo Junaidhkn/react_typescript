@@ -1,5 +1,13 @@
+import './App.css';
+
+import Greet from './components/Greet';
+
 const App = () => {
-	return <div>App</div>;
+	return (
+		<div className='App'>
+			<Greet />
+		</div>
+	);
 };
 
 export default App;
