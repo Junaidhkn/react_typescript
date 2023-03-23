@@ -1,4 +1,5 @@
 import './App.css';
+import Button from './components/Button';
 
 import Greet from './components/Greet';
 import Person from './components/Person';
@@ -29,11 +30,16 @@ const App = () => {
 		},
 	];
 
+	const onClickHandler = () => {
+		console.log('Clicked!');
+	};
+
 	return (
 		<div className='App'>
 			<Greet
 				name='Junaid'
 				isLoggedIn={true}>
+				<Button handleClick={onClickHandler} />
 				<Person name={personName} />
 				<PersonList nameList={nameList} />
 				<Status status='loading' />
