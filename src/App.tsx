@@ -30,16 +30,16 @@ const App = () => {
 		},
 	];
 
-	const onClickHandler = () => {
-		console.log('Clicked!');
-	};
-
 	return (
 		<div className='App'>
 			<Greet
 				name='Junaid'
 				isLoggedIn={true}>
-				<Button handleClick={onClickHandler} />
+				<Button
+					onClickHandler={(event) => {
+						console.log('Clicked!', event);
+					}}
+				/>
 				<Person name={personName} />
 				<PersonList nameList={nameList} />
 				<Status status='loading' />

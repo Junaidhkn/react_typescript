@@ -1,11 +1,9 @@
-import React from 'react';
-
 type ButtonProps = {
-	handleClick: () => void;
+	onClickHandler: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 const Button = (props: ButtonProps) => {
-	return <button onClick={props.handleClick}>Click ME</button>;
+	return <button onClick={props.onClickHandler}>Click ME</button>;
 };
 
 export default Button;
